@@ -1,0 +1,28 @@
+.content {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+background: rgb(10,0,187);
+background: linear-gradient(0deg, rgba(10,0,187,1) 0%, rgba(37,37,230,1) 50%, rgba(80,98,255,1) 100%);
+
+}
+
+#button {
+background-color: #5062ff;
+border: #5062ff;
+padding: 15px 32px;
+color: white;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+box-shadow: 3px 2px 5px black;
+}
+#count {
+font-weight: bold;
+color: white;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 3px 2px 5px black;
+}
