@@ -1,10 +1,6 @@
-/*.center {
+.center {
     margin: auto;
-    width: 50%;
+    width: max-content;
     justify-content: center;
     padding: 10px;
-  }
-*/
-body{
-width: max-width;
 }
