@@ -1,12 +1,14 @@
-let sign = document.querySelectorAll('.sign');
-let num = document.querySelectorAll(".num");
-let screen = document.getElementById('screen');
-let clear = document.getElementById('C');
-let eq = document.getElementById('=');
-let ans = document.getElementById('ans');
+const sign = document.querySelectorAll('.sign');
+const num = document.querySelectorAll(".num");
+const screen = document.getElementById('screen');
+const clear = document.getElementById('C');
+const eq = document.getElementById('=');
+const ans = document.getElementById('ans');
 let result = '',
     temp = 0;
 const error = 'Math error :/';
+const darkMode = document.getElementById('darkMode');
+const body = document.getElementById('body');
 
 sign.forEach(s => {
     s.addEventListener('click', () => {
@@ -57,5 +59,17 @@ ans.onclick = () => {
         ans.click();
     } else {
         screen.value += temp;
+    }
+}
+
+darkMode.onclick = () => {
+    if (body.className == 'day') {
+        body.className = 'dark';
+        darkMode.innerText = 'light';
+        darkMode.className = 'btn btn-light mx-1 my-2';
+    } else {
+        body.className = 'day';
+        darkMode.innerText = 'dark';
+        darkMode.className = 'btn btn-dark mx-1 my-2';
     }
 }
